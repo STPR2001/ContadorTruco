@@ -3,6 +3,8 @@ export class Contador{
     nombre;
     cuentaElement;
     containerElement;
+    $numeroCuentaEllos = document.getElementById("numeroCuentaEllos")
+    $numeroCuentaNosotros = document.getElementById("numeroCuentaNosotros")
 
     constructor(nombre, containerElement, cuentaInicial = 0){
         this.nombre=nombre;
@@ -17,7 +19,7 @@ export class Contador{
     agregar(cantidad=1){
         this.numero += cantidad;
         this.actualizarCuenta()
-        
+      
     }
 
     restar(cantidad = 1){
@@ -56,5 +58,11 @@ export class Contador{
                 nuevoFosforo.src = "img/fosforo.png";
                 grupoActual.appendChild(nuevoFosforo)
             }
+
       }
+
+    //   actualizarNumeros() {
+    //     this.$numeroCuentaEllos.innerHTML = this.numero;
+    //     this.$numeroCuentaNosotros.innerHTML = this.numero;
+    // }
 }
