@@ -5,11 +5,11 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="style.css">
-    <script src="scripts/index.js" type="module"></script>
-    <title>Contador de Truco</title>
+    <link rel="icon" type="image/png" href="img/fosforo.png">
+    <title>Anotador de Truco</title>
 </head>
 <body>
-    <h1>Contador de Truco</h1>
+    <h1>Anotador de Truco</h1>
     <div id="jugadoresContainers">
         <div id="jugador1Container" class="jugadorContainer">
             <div class="botonesJugador">
@@ -18,6 +18,7 @@
             </div>
             <h2>Nosotros</h2>
             <div class="cuenta"></div>
+            <h3 id="numeroCuentaEllos"></h3>
         </div>
         <div id="jugador2Container" class="jugadorContainer">
             <div class="botonesJugador">
@@ -26,12 +27,15 @@
         </div>
             <h2>Ellos</h2>
             <div class="cuenta"></div>
+            <h3 id="numeroCuentaNosotros"></h3>
         </div>
     </div>
     <button id="reset">Reset</button>
 
     <footer>
-        <p>Chorimed para de llorar</p>
+        <p>StarttWeb</p>
+        <script src="scripts/index.js" type="module"></script>
+        <script src="scripts/contador.js" type="module"></script>
     </footer>
 </body>
 </html>

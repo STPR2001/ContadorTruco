@@ -1,7 +1,7 @@
 import {Contador} from "./contador.js"
 
 
-window.alert("No vale llorar");
+//window.alert("No vale llorar");
 
 
 const p1 = new Contador("Nosotros", document.getElementById("jugador1Container"));
